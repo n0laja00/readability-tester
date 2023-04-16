@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 2rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type=file] {
+    margin: 2rem;
+}
+
+.result {
+
+    transition: opacity 1s;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.fade-in {
+    opacity: 1;
+}
