@@ -7,7 +7,7 @@
 
 
 //Calculate-functions contain the logic of calculations that produce the displayed numeric value on the page: easeResult and gradeResult
-function CalculateFleschReadingEase(text) {
+function calculateFleschReadingEase(text) {
     const words = text.trim().split(/\s+/).length;
     const sentences = text.trim().split(/[.!?]+/).length;
     const syllables = text.trim().replace(/[^aeiouy]/gi, '').length;
@@ -16,7 +16,7 @@ function CalculateFleschReadingEase(text) {
     return parseFloat(ease.toFixed(2));
 }
 
-function CalculateFleschKincaidGrade(text) {
+function calculateFleschKincaidGrade(text) {
     const words = text.trim().split(/\s+/).length;
     const sentences = text.trim().split(/[.!?]+/).length;
     const syllables = text.trim().replace(/[^aeiouy]/gi, '').length;
